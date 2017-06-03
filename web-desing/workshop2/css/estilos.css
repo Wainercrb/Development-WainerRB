@@ -26,7 +26,12 @@ h1, h2, h3, h4, h5, h6{
 
 .header .contenedor{
     display: flex; /*To stand at par */
+    justify-content: space-between; /*position of the icon in the rigth*/
 }
+.logo, .icon-menu{
+    margin: 5px; /*So that the title in line with the icon*/
+}
+
 .icon-menu{
     display: block;
     width: 40px;
@@ -35,6 +40,33 @@ h1, h2, h3, h4, h5, h6{
     background: #81DAF5;
     color: #fff;
     text-align: center;
-    line-height: 40;
+    line-height: 45px;
     border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;/*event for */
+}
+.nav{
+    position: absolute;
+    top: 60px;
+    left:-100%;
+    width: 100%;
+    transition: all 0,4s; /*animation when I press the icon menu*/
+}
+
+.menu_link{
+    display: block;
+    padding: 15px; /*espacion de cada linea del menu*/
+    background: #81DAF5;
+    text-decoration: none;/*Remove underscore from text*/
+    color: #fff; /*color of the text*/
+    
+}
+.menu_link:hover{ /* Mouse event, when you hover the mouse over the menu it takes a white color */
+    background: #fff;
+    color: #81DAF5;
+}
+
+/*evento of the transition on the little menu*/
+.mostrar{
+    left: 0;
 }

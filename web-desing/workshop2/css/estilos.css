@@ -1,0 +1,40 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
+</style>
+* {box-sizing: border-box
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+bordy{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Open Sans', sans-serif;    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    <!--MoreSpaceinBetweenDifferentCharacters-->
+    letter-spacing:1.5px;
+}
+/*styles of the headers*/
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex; /*To stand at par */
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;/*size of the icon menu*/
+    background: #81DAF5;
+    color: #fff;
+    text-align: center;
+    line-height: 40;
+    border-radius: 5px;
+}

@@ -10,7 +10,8 @@ img{
     display:block;
     max-width: 100%;
 }
-bordy{
+body{
+margin: 0;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-family: 'Open Sans', sans-serif;    
 }
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .logo, .icon-menu{
     margin: 5px; /*So that the title in line with the icon*/
+    color: #fff;
 }
 
 .icon-menu{
@@ -38,7 +40,6 @@ h1, h2, h3, h4, h5, h6{
     height: 40px;
     font-size: 35px;/*size of the icon menu*/
     background: #81DAF5;
-    color: #fff;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -50,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
     top: 60px;
     left:-100%;
     width: 100%;
-    transition: all 0,4s; /*animation when I press the icon menu*/
+    transition: all 0.5s; /*animation when I press the icon menu*/
 }
 
 .menu_link{
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5, h6{
     color: #fff; /*color of the text*/
     
 }
-.menu_link:hover{ /* Mouse event, when you hover the mouse over the menu it takes a white color */
+.menu_link:hover,.select{ /* Mouse event, when you hover the mouse over the menu it takes a white color */
     background: #fff;
     color: #81DAF5;
 }
@@ -70,3 +71,75 @@ h1, h2, h3, h4, h5, h6{
 .mostrar{
     left: 0;
 }
+
+/*styles of the banner*/
+.banner{
+    margin-top: -60px; /*position of banner */
+   /*I Make the menu stay ahead*/
+    position: relative;
+    z-index: -1000; 
+    
+}
+
+.fondo{
+     width: 100%; /* en porcentaje (el highlight del foro lo trasforma) */
+    height: 100%;
+    top:0;
+    left:0;
+   
+}
+.banner .contenedor{
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%); /*position in x and y*/
+    width: 100%;
+    color: #fff;
+    text-align: center;        
+}
+
+
+.banner__txt{
+    display: none;
+    
+}
+
+.gallery{
+     width: 95%;
+    margin: auto;
+    
+}
+.gallery ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    
+}
+
+.gallery li{
+    width: 100%;
+    list-style: none;
+}
+gallery img{
+    
+    width: 100%;
+}
+@keyFrames cambio{
+    0% {margin-left:-0; }
+    20% {margin-left:-0; }
+    
+    25%{margin-left:-100%; }
+    45%{margin-left:-200%; }
+    
+    50%{margin-left:200%; }
+    70%{margin-left:200%; }
+    
+    75%{margin-left:300%; }
+    100%{margin-left:300%; }
+    
+    
+}
+
+

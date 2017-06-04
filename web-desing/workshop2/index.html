@@ -34,11 +34,28 @@
            <p class="banner txt">created by WainerRB</p>
        </div>
    </div>
-     <div class="gallery">
-    <ul><img src="gallery/uno.jpg" alt=""></ul>
-    <ul><img src="gallery/dos.jpg" alt=""></ul>
-    <ul><img src="gallery/tres.jpg" alt=""></ul>
-    <ul><img src="gallery/cuatro.jpg" alt=""></ul>
+<div>
+<script type="text/javascript">
+    var foto = document.getElementById('imm')
+    var num = 1;
+    function adelante(){
+        num++;
+        if (num>3){
+            num= 1;
+        }
+        imm.src = "gallery/foto"+num+".jpg";   
+    }
+     function atras(){
+     num--;
+        if (num<2){
+            num= 4;
+        }
+        imm.src = "gallery/foto"+num+".jpg";   
+    }    
+</script>
+    <img src= "gallery/foto1.jpg" alt="" id="imm">
+    <input type="button" value=">>" onclick="adelante()"/>
+    <input type="button" value=">>" onclick="atras()"/>        
    </div>
   <!--this tag serves for add code java-->
 <script src="js/menu.js"></script>        

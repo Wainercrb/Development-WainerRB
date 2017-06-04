@@ -6,11 +6,13 @@
 </style>
 * {box-sizing: border-box
 }
+
 img{
     display:block;
     max-width: 100%;
 }
-body{
+body{   
+background-image: url('../img/backgraud2.jpg');     
 margin: 0;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-family: 'Open Sans', sans-serif;    
@@ -31,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .logo, .icon-menu{
     margin: 5px; /*So that the title in line with the icon*/
-    color: #fff;
+    color: skyblue;
 }
 
 .icon-menu{
@@ -95,51 +97,23 @@ h1, h2, h3, h4, h5, h6{
     left: 50%;
     transform: translate(-50%) translateY(-50%); /*position in x and y*/
     width: 100%;
-    color: #fff;
+    color: deepskyblue;
     text-align: center;        
 }
 
 
 .banner__txt{
-    display: none;
-    
+    display: none;    
+}
+img.foto{
+   content:url(hola();   
 }
 
-.gallery{
-     width: 95%;
-    margin: auto;
-    
-}
-.gallery ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 20s infinite;
-    
-}
+div.image {
+   content:url('../gallery/foto1.jpg');
+}​
 
-.gallery li{
-    width: 100%;
-    list-style: none;
-}
-gallery img{
-    
-    width: 100%;
-}
-@keyFrames cambio{
-    0% {margin-left:-0; }
-    20% {margin-left:-0; }
-    
-    25%{margin-left:-100%; }
-    45%{margin-left:-200%; }
-    
-    50%{margin-left:200%; }
-    70%{margin-left:200%; }
-    
-    75%{margin-left:300%; }
-    100%{margin-left:300%; }
-    
-    
-}
+
+
 
 

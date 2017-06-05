@@ -1,119 +1,166 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
-</style>
-* {box-sizing: border-box
+<style>@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+</style><style>@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
+</style>* {
+    box-sizing: border-box
 }
 
-img{
-    display:block;
+img {
+    display: block;
     max-width: 100%;
 }
-body{   
-background-image: url('../img/backgraud2.jpg');     
-margin: 0;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Open Sans', sans-serif;    
-}
-h1, h2, h3, h4, h5, h6{
+
+body {
+    background-image: url('../img/backgraud2.jpg');
+    margin: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    <!--MoreSpaceinBetweenDifferentCharacters-->
-    letter-spacing:1.5px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    <!--MoreSpaceinBetweenDifferentCharacters-->letter-spacing: 1.5px;
+}
+
+
 /*styles of the headers*/
-.header{
+
+.header {
     height: 60px;
 }
 
-.header .contenedor{
-    display: flex; /*To stand at par */
-    justify-content: space-between; /*position of the icon in the rigth*/
+.header .contenedor {
+    display: flex;
+    /*To stand at par */
+    justify-content: space-between;
+    /*position of the icon in the rigth*/
 }
-.logo, .icon-menu{
-    margin: 5px; /*So that the title in line with the icon*/
+
+.logo,
+.icon-menu {
+    margin: 5px;
+    /*So that the title in line with the icon*/
     color: skyblue;
 }
 
-.icon-menu{
+.icon-menu {
     display: block;
     width: 40px;
     height: 40px;
-    font-size: 35px;/*size of the icon menu*/
+    font-size: 35px;
+    /*size of the icon menu*/
     background: #81DAF5;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
     margin-left: auto;
-    cursor: pointer;/*event for */
-}
-.nav{
-    position: absolute;
-    top: 60px;
-    left:-100%;
-    width: 100%;
-    transition: all 0.5s; /*animation when I press the icon menu*/
+    cursor: pointer;
+    /*event for */
 }
 
-.menu_link{
-    display: block;
-    padding: 15px; /*espacion de cada linea del menu*/
-    background: #81DAF5;
-    text-decoration: none;/*Remove underscore from text*/
-    color: #fff; /*color of the text*/
-    
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+    /*animation when I press the icon menu*/
 }
-.menu_link:hover,.select{ /* Mouse event, when you hover the mouse over the menu it takes a white color */
+
+.menu_link {
+    display: block;
+    padding: 15px;
+    /*espacion de cada linea del menu*/
+    background: #81DAF5;
+    text-decoration: none;
+    /*Remove underscore from text*/
+    color: #fff;
+    /*color of the text*/
+}
+
+.menu_link:hover,
+.select {
+    /* Mouse event, when you hover the mouse over the menu it takes a white color */
     background: #fff;
     color: #81DAF5;
 }
 
+
 /*evento of the transition on the little menu*/
-.mostrar{
+
+.mostrar {
     left: 0;
 }
 
+
 /*styles of the banner*/
-.banner{
-    margin-top: -60px; /*position of banner */
-   /*I Make the menu stay ahead*/
+
+.banner {
+    margin-top: -60px;
+    /*position of banner */
+    /*I Make the menu stay ahead*/
     position: relative;
-    z-index: -1000; 
-    
+    z-index: -1000;
 }
 
-.fondo{
-     width: 100%; /* en porcentaje (el highlight del foro lo trasforma) */
+.fondo {
+    width: 100%;
+    /* en porcentaje (el highlight del foro lo trasforma) */
     height: 100%;
-    top:0;
-    left:0;
-   
+    top: 0;
+    left: 0;
 }
-.banner .contenedor{
-    
+
+.banner .contenedor {
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%) translateY(-50%); /*position in x and y*/
+    transform: translate(-50%) translateY(-50%);
+    /*position in x and y*/
     width: 100%;
     color: deepskyblue;
-    text-align: center;        
+    text-align: center;
 }
 
-
-.banner__txt{
-    display: none;    
-}
-img.foto{
-   content:url(hola();   
+.banner__txt {
+    display: none;
 }
 
-div.image {
-   content:url('../gallery/foto1.jpg');
-}​
+.gallery .conteint {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+    /*position in x and y*/
+    width: 100%;
+    color: deepskyblue;
+    text-align: center;
+}
 
+.image {
+    transform: translate(70%)
+}
 
+.gallery .conteint .btnAdelante {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
 
-
-
+.gallery .conteint .btnAtras {
+    position: absolute;
+    top: 50%;
+    left: 67.5%;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}

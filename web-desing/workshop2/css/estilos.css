@@ -164,3 +164,26 @@ h6 {
     color: white;
     background-color: transparent;
 }
+
+.video {
+    display: block;
+    position: absolute;
+    top: 195%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+}
+
+.cont {
+    position: fixed;
+    top: 6%;
+    left: 43%;
+}
+
+.text2{
+     position:fixed;
+    top: 40%;
+    left: 43%;
+}
+

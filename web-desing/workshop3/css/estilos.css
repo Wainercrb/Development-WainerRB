@@ -18,6 +18,15 @@ img {
 }
 .divContDos{
     position: absolute;
+    display: block;
    top: 250px;
     width: 50%
+}
+.img2{
+  
+   width: 80%;
+    top: 0%;
+    left: 110%;
+    
+    
 }

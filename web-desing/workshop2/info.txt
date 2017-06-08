@@ -1,7 +1,0 @@
-NEWSPAPAPER
-
-Create 2 separate HTML pages that simulates a news paper website. 
-
-One page will be the front page (cover)
-
-Other page will be an inner page (a news)

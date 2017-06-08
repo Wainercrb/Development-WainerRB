@@ -1,0 +1,23 @@
+.div_header {}
+
+.div_sub_header {
+    position: absolute;
+    display: block;
+    left: 13%;
+}
+
+.h2 {
+    text-align: right;
+}
+
+img {
+    position: absolute;
+    display: flex;
+    width: 12%;
+    
+}
+.divContDos{
+    position: absolute;
+   top: 250px;
+    width: 50%
+}

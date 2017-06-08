@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>newspapers</title>
+    <!-- this tag serves to make the pages fit to for the different screens  -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://file.myfontastic.com/SnJbVmgJX44QK6RnrqeAjk/icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!--this tag serves for contein a group of the tags -->
+        <div class="contenedor">
+            <!--this tag serves for add a title of the page--->
+            <h1 class="logo">newspaper</h1>
+            <!-- this tag is an online container, it is used to apply a style to the text or to group elements in line -->
+            <span class="icon-menu" id="btnMenu"></span>
+            <!--this tags  serves for created a menu of the navegation-->
+            <nav class="nav" id="nav" </na>
+                <!--this tag serves for add a little menu-->
+                <ul class="menu">
+                    <li class="item"><a class="menu_link select" href="index2.html">Information </a></li>
+                    <!--menu link por pagina.html-->
+                    <li class="item"><a class="menu_link" href="">International news</a></li>
+                    <li class="item"><a class="menu_link" href="">Famous</a></li>
+                    <li class="item"><a class="menu_link" href="">Deports</a></li>
+                </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <img class="fondo" src="img/banner2.jpg" alt="" class="banner__img">
+        <div class="contenedor">
+            <h2 class="banner__titulo">galeria de images</h2>
+            <p class="banner txt">created by WainerRB</p>
+        </div>
+    </div>
+    <div class=gallery>
+        <script type="text/javascript">
+            var foto = document.getElementById('imm')
+            var num = 1;
+
+            function adelante() {
+                num++;
+                if (num > 3) {
+                    num = 1;
+                }
+                imm.src = "gallery/foto" + num + ".jpg";
+            }
+
+            function atras() {
+                num--;
+                if (num < 2) {
+                    num = 4;
+                }
+                imm.src = "gallery/foto" + num + ".jpg";
+            }
+
+        </script>
+        <div class="conteint">
+            <img class="image" src="gallery/foto1.jpg" alt="" id="imm">
+            <input class="btnAdelante" type="button" value="<<" onclick="atras()" />
+            <input class="btnAtras" type="button" value=">>" onclick="adelante()" />
+        </div>
+        <div class="video">
+
+            <div>
+                <h1>UTN Ciudad Quesada</h1>
+                <div class="cont">
+                    <p class="text">
+                        The Institute for International Sport was founded by Dan Doyle on July 1, 1986. The Institute's mission From the UTN is committed to the internationalization since the very elaboration of the action plans. Internationalization contributes to improving the relationship between students, clients and society, promoting excellence and continuous improvement processes, facilitating the exchange of experiences for learning and innovation and finally academic development.
+                    </p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k6I-WVFte0s" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h1>So James Rodriguez retired from the field of play in the Cardiff Final</h1>
+                <p class="text2">
+                    Todavía no es oficial, pero James Rodríguez tiene claro que del Real Madrid no quiere saber más en la próxima temporada. Con su no convocatoria a la final de la Champions League en Cardiff, Zidane le ha dejado en claro que tampoco tiene deseos de verlo.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/siJz-atzuSw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h1>RM. Final Cop</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dYrxHHVGsso" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!--this tag serves for add code java-->
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,32 +1,68 @@
-.div_header {}
-
-.div_sub_header {
-    position: absolute;
-    display: block;
-    left: 13%;
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Hammersmith+One|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Domine|Hammersmith+One|Kaushan+Script');
+h1 {
+    font-family: 'Courgette', cursive;
 }
 
-.h2 {
-    text-align: right;
+h2 {
+    font-family: 'Courgette', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
-img {
+#h2_h2 {
+    font-family: 'Courgette', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+p,
+li {
+    font-family: 'Courgette', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Domine', serif;
+}
+
+#logo {
     position: absolute;
     display: flex;
     width: 12%;
-    
 }
-.divContDos{
+
+#div_header {
     position: absolute;
     display: block;
-   top: 250px;
-    width: 50%
+    text-align: justify;
+    left: 13%;
 }
-.img2{
-  
-   width: 80%;
-    top: 0%;
+
+#div_body {
+    position: absolute;
+    display: block;
+    top: 250px;
+    width: 50%;
+    text-align: justify;
+}
+
+#img_dos {
+    position: absolute;
+    width: 80%;
+    top: 5%;
     left: 110%;
-    
-    
+    box-shadow: 4px 4px 4px #999;
+}
+
+#vertical-bar {
+    position: absolute;
+    right: 47%;
+    border-left: 2px solid #ccc;
+    width: 2px;
+    height: 500px;
+    top: 40%;
+}
+
+li {
+    list-style-type: disc;
 }

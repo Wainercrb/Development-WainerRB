@@ -1,0 +1,1 @@
+what is a selector in css?: The selector points to the HTML element you want to style.
